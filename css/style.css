@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #595DD2; /* Darkblue fon */
+    color: white; /* Oq matn */
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  .header {
+    background-color: white; /* Oq rang */
+    color: #595DD2; /* #595DD2 rang */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideInFromTop 1s ease forwards;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    color: #595DD2; /* #595DD2 rang */
+    animation: fadeIn 2s ease-in 0.5s;
+  }
+  
+  .message-section {
+    margin: 40px 0;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .message-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white; /* Oq rang */
+    animation: slideInFromBottom 1.5s ease-in-out;
+  }
+  
+  .main-message {
+    font-size: 1.6rem;
+    margin: 20px 0;
+    background-color: white; /* Oq rang */
+    color: #595DD2; /* #595DD2 rang */
+    padding: 15px;
+    border-radius: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .btn {
+    background-color: #595DD2; /* #595DD2 rang */
+    color: white; /* Oq matn */
+    border: 2px solid white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.4s;
+    animation: fadeIn 1.5s ease-in-out 0.8s;
+  }
+  
+  .btn:hover {
+    background-color: white; /* Hoverda oq rang */
+    color: #595DD2; /* Hoverda #595DD2 */
+  }
+  
+  .card-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    gap: 20px;
+    flex-wrap: wrap; /* Responsivlik uchun qo‘shildi */
+    animation: slideInFromBottom 1.5s ease-in-out;
+  }
+  
+  .card {
+    background-color: white; /* Oq fon */
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #595DD2; /* #595DD2 rang */
+    animation: fadeIn 2s ease-in;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #595DD2; /* #595DD2 rang */
+    animation: fadeIn 2s ease-in;
+  }
+  
+  .card p {
+    font-size: 1.1rem;
+    color: #595DD2; /* #595DD2 rang */
+    animation: fadeIn 2s ease-in;
+  }
+  
+  .footer {
+    margin-top: 40px;
+    font-size: 1rem;
+    color: white; /* Oq matn */
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromTop {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromBottom {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 2rem; /* Kichraytirish */
+    }
+  
+    .header p {
+      font-size: 1rem; /* Kichraytirish */
+    }
+  
+    .message-section h2 {
+      font-size: 1.5rem; /* Kichraytirish */
+    }
+  
+    .main-message {
+      font-size: 1.4rem; /* Kichraytirish */
+    }
+  
+    .btn {
+      font-size: 1rem; /* Kichraytirish */
+    }
+  
+    .card {
+      width: 100%; /* Kichraytirish */
+    }
+  
+    .card h3 {
+      font-size: 1.3rem; /* Kichraytirish */
+    }
+  
+    .card p {
+      font-size: 1rem; /* Kichraytirish */
+    }
+  
+    .footer {
+      font-size: 0.9rem; /* Kichraytirish */
+    }
+  }
+  
